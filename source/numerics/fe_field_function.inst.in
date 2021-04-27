@@ -25,3 +25,9 @@ for (DoFHandler : DOFHANDLER_TEMPLATES; VECTOR : VECTOR_TYPES;
                                      VECTOR>;
     \}
   }
+
+for (VECTOR : REAL_VECTOR_TYPES; deal_II_dimension : DIMENSIONS)
+  {
+    template class Functions::RefSpaceFEFieldFunction<deal_II_dimension,
+                                                      VECTOR>;
+  }
